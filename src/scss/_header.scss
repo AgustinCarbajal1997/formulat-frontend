@@ -1,0 +1,188 @@
+.header-container {
+    width: 100%;
+    height: 10vh;
+    position: block;
+
+    .header {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        justify-content: space-between;
+        align-items: center;
+
+        .hamburger-container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            position: relative;
+            z-index: 99999;
+        }
+
+        .logo {
+            width: 100%;
+            height: 10vh;
+            padding-left: 20px;
+
+            img {
+                width: auto;
+                height: 100%;
+            }
+
+        }
+
+
+    }
+
+    .nav-bar-mobile {
+        width: 100%;
+        height: 100vh;
+        background-color: Darkred;
+        background-image: linear-gradient(90deg, Darkred, #FF2424);
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        transition: all .3s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 2rem;
+            margin: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header-container {
+        width: 100%;
+        height: 12vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999999;
+
+        .header {
+            height: 100%;
+            background-image: linear-gradient(to top,
+                    rgba(0, 0, 0, 0),
+                    rgba(0, 0, 0, 0.301),
+                    rgba(0, 0, 0, 0.555),
+                    rgba(0, 0, 0, 0.657));
+            background-color: unset;
+            grid-template-columns: 10% 60% 30%;
+            grid-template-areas: "logo search cart";
+            backdrop-filter: blur(5px);
+            .hamburger-container {
+                display: none;
+            }
+
+
+            .logo {
+                grid-area: logo;
+                width: 100%;
+                height: 12vh;
+                padding-left: 20px;
+
+                img {
+                    width: auto;
+                    height: 100%;
+                }
+            }
+
+            .buttons-auth {
+                display: flex;
+                justify-content: space-around;
+                grid-area: cart;
+
+                .buttons-auth-login {
+                    background-color: transparent;
+                    border: none;
+                    font-size: .8rem;
+                    cursor: pointer;
+                    font-family: 'Work Sans', sans-serif;
+                    color: #ffffff;
+                    outline: none;
+                }
+
+                .buttons-auth-signup {
+                    background-color: Darkred;
+                    background-image: linear-gradient(90deg, Darkred, #FF2424);
+                    border: none;
+                    color: #ffffff;
+                    font-family: 'Work Sans', sans-serif;
+                    font-size: .8rem;
+                    cursor: pointer;
+                    padding: 7px;
+                    font-weight: 500;
+                    border-radius: 3px;
+                    outline: none;
+                }
+
+            }
+        }
+
+        .nav-bar {
+            display: flex;
+            grid-area: search;
+            flex-direction: row;
+            position: static;
+            height: unset;
+            background-color: unset;
+            justify-content: flex-start;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                padding: 10px 0;
+                margin: 0 20px;
+                font-size: .8rem;
+                color: #ffffff;
+                font-weight: 300;
+            }
+        }
+
+    }
+}
+@media screen and (min-width: 1024px) {
+    .header-container {
+        .header {
+            grid-template-columns: 10% 70% 20%;
+            .logo {
+                padding-left: 50px;
+            }
+
+            .buttons-auth {
+                .buttons-auth-login {
+                    font-size: 1rem;
+                }
+
+                .buttons-auth-signup {
+                    font-size: 1rem;
+                }
+
+            }
+        }
+
+        .nav-bar {
+            a {
+                text-decoration: none;
+                padding: 10px 0;
+                margin: 0 20px;
+                font-size: 1rem;
+                color: #ffffff;
+                font-weight: 300;
+            }
+        }
+
+    }
+}

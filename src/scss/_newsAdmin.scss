@@ -1,0 +1,297 @@
+.newslist-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  .newslist-button-create-div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+    .newslist-button-create {
+      background-color: Darkturquoise;
+      background-image: linear-gradient(90deg, #5e7272, Darkturquoise);
+      border: none;
+      color: #ffffff;
+      font-family: "Work Sans", sans-serif;
+      font-size: 1rem;
+      cursor: pointer;
+      padding: 7px;
+      font-weight: 500;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
+
+tr:hover {
+  background-color: #575757;
+  transition: all ease 0.5s;
+}
+
+.table-newslist {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.header-title-table {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.titles-table-listnews {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #ffffff;
+  width: 60%;
+  text-align: left;
+}
+
+.td-buttons {
+  width: 1%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.highlight-button-admin {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons-table-listnews-edit {
+  width: 100%;
+  background-color: Darkturquoise;
+  background-image: linear-gradient(90deg, #5e7272, Darkturquoise);
+  border: none;
+  color: #ffffff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 7px;
+  font-weight: 500;
+  border-radius: 3px;
+  margin: auto;
+}
+
+.buttons-table-listnews-delete {
+  width: 100%;
+  background-color: Darkred;
+  background-image: linear-gradient(90deg, Darkred, #ff2424);
+  border: none;
+  color: #ffffff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 7px;
+  font-weight: 500;
+  border-radius: 3px;
+  margin: auto;
+}
+
+.textarea-newsadmin {
+  width: 100%;
+  margin: 20px auto;
+  resize: none;
+  outline: none;
+  padding: 0;
+}
+
+// FORM----
+.newsadmin-container {
+  width: 95%;
+  margin: auto;
+}
+
+.newsadmin-container-logo {
+  width: 200px;
+  margin: auto;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.newsadmin-information-form {
+  width: 95%;
+  margin: auto;
+}
+
+.newsadmin-form-container h2 {
+  text-align: center;
+  color: #353535;
+  display: none;
+}
+.newsadmin-information-form h2 {
+  color: #383838;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  display: none;
+}
+
+.newsadmin-information-form div {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.newsadmin-information-form label {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.newsadmin-information-form-input {
+  height: 30px;
+  margin-top: 5px;
+  border: 1px solid #dddddd;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: rem;
+  outline: none;
+}
+
+.newsadmin-input-error {
+  border: 1px solid red;
+}
+
+@media screen and (min-width: 768px) {
+  .newslist-container {
+    margin-top: 18vh;
+  }
+  .newslist-container {
+    .newslist-button-create-div {
+      justify-content: flex-start;
+    }
+  }
+  .titles-table-listnews {
+    color: #ffffff;
+    width: 16%;
+    text-align: left;
+  }
+
+  .td-buttons {
+    width: 10%;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .highlight-button-admin {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .textarea-newsadmin {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .newsadmin-form-container h2 {
+    text-align: center;
+    color: #353535;
+    display: none;
+  }
+
+  .newsadmin-information-form {
+    width: 80%;
+    margin: auto;
+    margin-top: 18vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .newsadmin-information-form div {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .submit-signup-button {
+    width: 90%;
+    margin: 20px auto;
+    background-color: Darkred;
+    background-image: linear-gradient(90deg, Darkred, #ff2424);
+    color: #ffffff;
+    border: none;
+    padding: 15px 0;
+    cursor: pointer;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    border-radius: 3px;
+    font-size: 1rem;
+  }
+}
+
+.payment-container {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin-top: 20px;
+}
+
+.payment-form-container {
+  width: 100%;
+}
+
+.payment-information-form {
+  width: 95%;
+  margin: auto;
+}
+
+.payment-information-form h2 {
+  color: #383838;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.payment-information-form div {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.payment-information-form label {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #383838;
+}
+
+.payment-information-form-input {
+  height: 30px;
+  margin-top: 5px;
+  border: 1px solid #dddddd;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  outline: none;
+}
+
+.payment-input-error {
+  border: 1px solid red;
+}

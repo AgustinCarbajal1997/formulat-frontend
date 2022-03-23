@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    background-color: black;
+}
+main{
+    min-height: 100vh;
+}
+::-webkit-scrollbar {
+    width: 9px;
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: linear-gradient(transparent, rgb(97, 1, 1));
+    border-radius: 6px
+}
+
+
+@import "header";
+@import "signupForm";
+@import "login";
+@import "dashboard";
+@import "newsAdmin";
+@import "confirm";
+@import "highlight";
+@import "latestNews";
+@import "newsArticle";
+@import "recentNews";
+@import "information";
+@import "statitics";
+@import "pagination";
+@import "banner";
+@import "favPage";
+@import "search";
+@import "footer";

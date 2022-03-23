@@ -1,0 +1,155 @@
+.information-contain {
+  padding-top: 20px;
+  h2 {
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+  }
+  .information-container {
+    width: 100%;
+    height: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .swiper {
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -150px;
+      margin-top: -150px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.informationData-page {
+  width: 100%;
+  margin-top: 20px;
+  .informationData-header-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .information-data-container-image {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 90%;
+        height: auto;
+      }
+    }
+    .information-data-container-table {
+      margin-top: 20px;
+      div {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #adadad;
+        h3 {
+          color: #ffffff;
+          font-weight: 500;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  .informationData-page-description {
+    width: 90%;
+    margin: auto;
+    .informationData-page-description-title {
+      color: #ffffff;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    .article-item-container-description-markdown {
+      color: #ffffff;
+      font-size: 1.2rem;
+      font-weight: 300;
+      line-height: 30px;
+
+      p {
+        display: block;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .information-contain {
+    padding-top: 15vh;
+
+    .information-container {
+      width: 100%;
+      height: 60vh;
+    }
+  }
+  .informationData-page {
+    width: 100%;
+    .informationData-header-container {
+      width: 100%;
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      .information-data-container-image {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 400px;
+          height: auto;
+        }
+      }
+      .information-data-container-table {
+        margin: auto 0;
+        div {
+          width: 80%;
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid #adadad;
+          h3 {
+            color: #ffffff;
+            font-weight: 500;
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+    .informationData-page-description {
+      width: 80%;
+      margin: auto;
+      .informationData-page-description-title {
+        color: #ffffff;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 0;
+      }
+      .article-item-container-description-markdown {
+        color: #ffffff;
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: 30px;
+
+        p {
+          display: block;
+        }
+      }
+    }
+  }
+}

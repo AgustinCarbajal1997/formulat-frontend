@@ -1,0 +1,108 @@
+.login-container {
+    width: 95%;
+    margin: auto;
+}
+.login-container-logo{
+    width: 200px;
+    margin: auto;
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+.login-form-container h2 {
+    text-align: center;
+    color: #353535;
+    display: none;
+}
+.login-information-form {
+    width: 95%;
+    margin: auto;
+}
+
+.login-information-form h2 {
+
+    color: #383838;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    display: none;
+}
+
+.login-information-form div {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.login-information-form label {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.login-information-form-input {
+    height: 30px;
+    margin-top: 5px;
+    border: 1px solid #dddddd;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    outline: none;
+}
+
+.login-input-error {
+    border: 1px solid red;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .login-container {
+        width: 95%;
+        margin: auto;
+        margin-top: 10vh;
+    }
+
+
+    .login-form-container h2 {
+        text-align: center;
+        color: #353535;
+        display: none;
+    }
+
+    .login-information-form {
+        width: 30%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .login-information-form div {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .login-signup-button {
+        width: 90%;
+        margin: 20px auto;
+        background-color: Darkred;
+        background-image: linear-gradient(90deg, Darkred, #FF2424);
+        color: #ffffff;
+        border: none;
+        padding: 15px 0;
+        cursor: pointer;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 500;
+        border-radius: 3px;
+        font-size: 1rem;
+    }
+
+}
