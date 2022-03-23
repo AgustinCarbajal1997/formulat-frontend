@@ -1,2 +1,2 @@
-const BASE_URL = "http://localhost:8080";
+const BASE_URL = "http://formulat-backend-ju8qr.ondigitalocean.app";
 export default BASE_URL;
