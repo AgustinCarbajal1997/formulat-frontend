@@ -176,7 +176,12 @@ const NewsContainer = ({ data, setData, dataAside }) => {
       setSavePrev([newCommentData.data, ...savePrev]);
       setTotalDocs(totalDocs + 1);
     } catch (error) {
-      console.log(error);
+      toast.error("¡Ha ocurrido un error!", {
+        style: {
+          backgroundColor: "#383838",
+          color: "#ffffff",
+        },
+      });
     }
   };
 

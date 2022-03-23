@@ -31,7 +31,7 @@ const Information = () => {
         setLoader(false);
       } catch (error) {
         setLoader(false);
-        console.log(error);
+        throw error;
       }
     })();
   }, [type, navigate]);

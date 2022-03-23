@@ -12,7 +12,6 @@ const NavBarContainer = () => {
   const [isOpen, setOpen] = useState(false);
   const navigate = useNavigate();
   const { width } = useWindowDimensions();
-  console.log(user);
   return (
     <header className="header-container">
       <div className="header">

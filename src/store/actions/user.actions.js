@@ -124,7 +124,6 @@ export const signup = (signup_data) => {
         },
       });
     } catch (error) {
-      console.log(error)
       cookies.remove("tk", { path: "/" });
       dispatch({
         type: CLEAN_STATE,

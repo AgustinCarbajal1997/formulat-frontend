@@ -35,7 +35,7 @@ const usePagination = (url, pageN, limitN, paginationB, save, options = {}) => {
         setLoading(false);
       } catch (error) {
         setLoading(false);
-        console.log(error);
+        setError(error);
       }
     },
     [limit, page,url,pagination, options, save],
@@ -58,14 +58,12 @@ const usePagination = (url, pageN, limitN, paginationB, save, options = {}) => {
         if (!abortController.signal.aborted) {
           const data = await response.json();
           setData(data);
-          console.log(data)
           setPage(data.data.page);
           setTotalDocs(data.data.totalDocs);
           if (save) setSavePrev([...savePrev, ...data.data.docs]);
         }
         setLoading(false);
       } catch (error) {
-        console.log(error);
         setLoading(false);
         if (error.name === "AbortError") {
           return;

@@ -22,7 +22,7 @@ const ProfileFavorites = () => {
         );
         setData(res.data);
       } catch (error) {
-        console.log(error);
+        throw error;
       }
     })();
   }, [user]);
