@@ -58,6 +58,7 @@ const usePagination = (url, pageN, limitN, paginationB, save, options = {}) => {
         if (!abortController.signal.aborted) {
           const data = await response.json();
           setData(data);
+          console.log(data)
           setPage(data.data.page);
           setTotalDocs(data.data.totalDocs);
           if (save) setSavePrev([...savePrev, ...data.data.docs]);
