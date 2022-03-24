@@ -24,7 +24,7 @@ export const login = (dataUser) => {
         };
         throw throwError;
       }
-      cookies.set("tk", data.access_token, { maxAge: 1000000, path: "/" });
+      cookies.set("tk", data.access_token, { maxAge: 10000000000, path: "/" });
 
       dispatch({
         type: LOGIN,
