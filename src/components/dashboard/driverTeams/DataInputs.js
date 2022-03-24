@@ -39,10 +39,6 @@ const equipos = [
     name: "name",
   },
   {
-    label: "Imagen",
-    name: "image",
-  },
-  {
     label: "Primer piloto",
     name: "firstDriver",
   },

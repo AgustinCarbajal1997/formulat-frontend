@@ -46,11 +46,6 @@ const equipos = {
     onBlur: false,
     checked: false,
   },
-  image: {
-    value: "",
-    onBlur: false,
-    checked: false,
-  },
   firstDriver: {
     value: "",
     onBlur: false,
