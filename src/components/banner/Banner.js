@@ -10,7 +10,7 @@ const Banner = () => {
     >
       <motion.div
         className="banner-title"
-        animate={{ opacity: [0, 1], display: ["none", "block"] }}
+        animate={{ opacity: [0, 1], display: "block" }}
         transition={{ delay: 4.8, duration: 0.3 }}
       >
         <h2>¡Lights out and away we go!</h2>

@@ -26,6 +26,7 @@ import ChangePassword from "../pages/profile/ChangePassword";
 import CreateAdmin from "../pages/dashboard/CreateAdmin";
 import NotFound from "../pages/NotFound";
 import Footer from "../pages/Footer";
+import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 const cookies = new Cookies();
 
 const Navigator = () => {
@@ -48,6 +49,7 @@ const Navigator = () => {
     <>
       <NavBarContainer />
       <Alert />
+      <ScrollToTop/>
       {banner && <Banner />}
       <main>
         <Routes>
