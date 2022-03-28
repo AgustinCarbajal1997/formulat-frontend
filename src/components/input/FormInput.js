@@ -1,7 +1,13 @@
 import React from "react";
 
 const FormInput = ({ item, state, onChangeInputHandler, onBlurRegex }) => {
-  const type = ["password", "oldPassword", "newPassword", "adminPassword"];
+  const type = [
+    "password",
+    "oldPassword",
+    "newPassword",
+    "adminPassword",
+    "confirmPassword",
+  ];
   return (
     <div className="signup-field-item">
       <label>{item.label}</label>

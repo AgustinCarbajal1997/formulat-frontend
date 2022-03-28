@@ -50,7 +50,6 @@ const Statitics = () => {
       {lastResults?.data && (
         <div className="table-latest">
           <h2>
-            Últimos resultados:{" "}
             {lastResults.data.MRData.RaceTable.Races[0].Circuit.circuitName}
           </h2>
           <table>
