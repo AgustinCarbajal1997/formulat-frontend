@@ -60,9 +60,10 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas:
-      "position latest"
-      "constructor constructor";
+      "position latest";
     align-items: flex-start;
+    
+    
     div {
       width: 80%;
       display: flex;
@@ -102,8 +103,7 @@
       grid-area: latest;
     }
     .table-constructor {
-      grid-area: constructor;
-      width: 40%;
+      width: 80%;
     }
   }
 }

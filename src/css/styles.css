@@ -1129,6 +1129,10 @@ tr:hover {
   object-position: center;
   object-fit: cover;
 }
+.article-item-container .article-item-container-creditImage {
+  color: #ffffff;
+  font-size: 0.8rem;
+}
 .article-item-container .article-item-container-date {
   color: #ffffff;
   font-weight: 500;
@@ -1834,7 +1838,7 @@ tr:hover {
     margin: auto;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-areas: "position latest" "constructor constructor";
+    grid-template-areas: "position latest";
     align-items: flex-start;
   }
   .statitics-page div {
@@ -1864,8 +1868,7 @@ tr:hover {
     grid-area: latest;
   }
   .statitics-page .table-constructor {
-    grid-area: constructor;
-    width: 40%;
+    width: 80%;
   }
 }
 .pagination-container {

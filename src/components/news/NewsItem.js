@@ -27,6 +27,7 @@ const NewsItem = ({
       <div className="article-item-container-image">
         <img src={data.image} alt={data.title} />
       </div>
+      <div className="article-item-container-creditImage">{data.creditImage}</div>
       <div
         style={{
           display: "flex",
