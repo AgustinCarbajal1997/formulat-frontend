@@ -27,6 +27,8 @@ import CreateAdmin from "../pages/dashboard/CreateAdmin";
 import NotFound from "../pages/NotFound";
 import Footer from "../pages/Footer";
 import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
+import SocialMedia from "../components/socialMedia/SocialMedia";
+import useWindowDimensions from "../customHooks/useWindowsDimensions";
 const cookies = new Cookies();
 
 const Navigator = () => {
@@ -44,13 +46,15 @@ const Navigator = () => {
       clearTimeout(timerBanner);
     };
   }, []);
-
+  const { width } = useWindowDimensions();
   return (
     <>
       <NavBarContainer />
       <Alert />
-      <ScrollToTop/>
+      <ScrollToTop />
       {banner && <Banner />}
+      {width > 768 && <SocialMedia />}
+
       <main>
         <Routes>
           <Route index path="/" element={<Home />} />

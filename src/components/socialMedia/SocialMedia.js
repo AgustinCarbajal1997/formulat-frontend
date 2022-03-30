@@ -1,27 +1,25 @@
 import React from "react";
-import NavBarList from "../components/navBar/NavBarList";
-import NAV_BAR_OPTIONS from "../components/navBar/NavBarOptions";
 import { MdOutlineLocalCafe } from "react-icons/md";
 import { BsInstagram, BsYoutube } from "react-icons/bs";
 import { ImTwitch } from "react-icons/im";
+import { motion } from "framer-motion";
 import ReactTooltip from 'react-tooltip';
-const Footer = () => {
+const SocialMedia = () => {
   return (
-    <div className="footer">
-      <nav className="nav-bar">
-        <NavBarList options={NAV_BAR_OPTIONS} />
-      </nav>
-      <div className="social-media-aside-footer">
+    <div className="social-media-aside-container">
       
-      <a
+      <motion.a
         className="social-media-aside-icon"
         href="https://cafecito.app/formulatoledo"
         rel="noreferrer"
         target={"_blank"}
+        animate={{ borderColor:["#d00098", "#8548e6", "#d00098"] }}
+        transition={{ repeat: Infinity, duration: 2 }}
+        style={{ borderRadius:"5px", border:"1px solid", padding:"5px" }}
         data-tip="Cafecito"
       >
         <MdOutlineLocalCafe size={24} color="#ffffff" />
-      </a>
+      </motion.a>
 
       <a
         className="social-media-aside-icon"
@@ -52,10 +50,7 @@ const Footer = () => {
       </a>
       <ReactTooltip />
     </div>
-      <h5>Software desarrollado por Agustín Carbajal</h5>
-      <h5>+54 3875411213</h5>
-    </div>
   );
 };
 
-export default Footer;
+export default SocialMedia;

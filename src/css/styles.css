@@ -1912,13 +1912,13 @@ tr:hover {
 }
 .banner .lights-container .logo-banner {
   width: 250px;
-  height: 250px;
+  height: auto;
   opacity: 0;
 }
 .banner .lights-container .logo-banner img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   object-position: center;
 }
 .banner .lights-container .lights-items {
@@ -1970,14 +1970,14 @@ tr:hover {
     align-items: center;
   }
   .banner .lights-container .logo-banner {
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: auto;
     opacity: 0;
   }
   .banner .lights-container .logo-banner img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
     object-position: center;
   }
   .banner .lights-container .lights-items {
@@ -2068,6 +2068,40 @@ tr:hover {
   .search-container {
     margin-top: 50px;
     width: 50%;
+  }
+}
+.social-media-aside-footer {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+  margin: 20px auto;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .social-media-aside-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(0%, -50%);
+    z-index: 999999;
+    background-color: rgba(46, 46, 46, 0.5);
+    padding: 20px 5px;
+    backdrop-filter: blur(5px);
+  }
+  .social-media-aside-container .social-media-aside-icon {
+    text-decoration: none;
+    padding: 8px 5px;
+  }
+
+  .social-media-aside-footer {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    margin: 20px auto;
+    align-items: center;
   }
 }
 .footer {

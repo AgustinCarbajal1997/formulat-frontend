@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NavBarList from "./NavBarList";
 import NAV_BAR_OPTIONS from "./NavBarOptions";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logoheader.png";
 import { Squash as Hamburger } from "hamburger-react";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
