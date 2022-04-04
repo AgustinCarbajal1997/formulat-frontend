@@ -2,6 +2,7 @@ import React from "react";
 import { MdOutlineLocalCafe } from "react-icons/md";
 import { BsInstagram, BsYoutube } from "react-icons/bs";
 import { ImTwitch } from "react-icons/im";
+import { AiOutlineMail } from "react-icons/ai";
 import { motion } from "framer-motion";
 import ReactTooltip from 'react-tooltip';
 const SocialMedia = () => {
@@ -47,6 +48,13 @@ const SocialMedia = () => {
         data-tip="Twitch"
       >
         <ImTwitch size={24} color="#ffffff" />
+      </a>
+      <a
+        className="social-media-aside-icon"
+        href="mailto:matitoledoarg@gmail.com"
+        data-tip="Contacto"
+      >
+        <AiOutlineMail size={24} color="#ffffff" />
       </a>
       <ReactTooltip />
     </div>

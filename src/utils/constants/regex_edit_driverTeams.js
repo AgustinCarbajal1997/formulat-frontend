@@ -6,8 +6,9 @@ const pilotos = {
   carNumber: /^/,
   country: ONLY_LETTERS,
   nationality: ONLY_LETTERS,
+  podiums: /^/,
   wins: /^/,
-  birthDate:/^/,
+  birthDate: /^/,
   championships: /^/,
 };
 
@@ -19,6 +20,7 @@ const equipos = {
   nationality: ONLY_LETTERS,
   wins: /^/,
   championships: /^/,
+  driverChampionships: /^/,
   teamPrincipal: ONLY_LETTERS,
 };
 const REGULAR_EXPRESSION = { pilotos, equipos };

@@ -24,6 +24,10 @@ const pilotos = [
     name:"birthDate"
   },
   {
+    label: "Podios",
+    name: "podiums",
+  },
+  {
     label: "Victorias",
     name: "wins",
   },
@@ -59,8 +63,12 @@ const equipos = [
     name: "wins",
   },
   {
-    label: "Campeonatos",
+    label: "Campeonatos de equipos",
     name: "championships",
+  },
+  {
+    label: "Campeonatos de pilotos",
+    name: "driverChampionships",
   },
   {
     label: "Director técnico",

@@ -24,6 +24,11 @@ const pilotos = {
     onBlur: false,
     checked: false,
   },
+  podiums: {
+    value: "",
+    onBlur: false,
+    checked: false,
+  },
   wins: {
     value: "",
     onBlur: false,
@@ -62,6 +67,11 @@ const equipos = {
     checked: false,
   },
   nationality: {
+    value: "",
+    onBlur: false,
+    checked: false,
+  },
+  driverChampionships: {
     value: "",
     onBlur: false,
     checked: false,
