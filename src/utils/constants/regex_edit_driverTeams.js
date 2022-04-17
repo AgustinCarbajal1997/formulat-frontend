@@ -1,8 +1,8 @@
 const ONLY_LETTERS =
   /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u;
 const pilotos = {
-  name: ONLY_LETTERS,
-  team: ONLY_LETTERS,
+  name: /^/,
+  team: /^/,
   carNumber: /^/,
   country: ONLY_LETTERS,
   nationality: ONLY_LETTERS,
@@ -13,7 +13,7 @@ const pilotos = {
 };
 
 const equipos = {
-  name: ONLY_LETTERS,
+  name: /^/,
   firstDriver: ONLY_LETTERS,
   secondDriver: ONLY_LETTERS,
   country: ONLY_LETTERS,

@@ -71,7 +71,7 @@ const equipos = [
     name: "driverChampionships",
   },
   {
-    label: "Director técnico",
+    label: "Jefe de equipo",
     name: "teamPrincipal",
   }
 ];

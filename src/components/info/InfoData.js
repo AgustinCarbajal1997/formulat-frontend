@@ -31,7 +31,7 @@ const InfoData = ({ type, data }) => {
                     <div><h3>Victorias</h3><h3>{data.wins}</h3></div>
                     <div><h3>Campeonatos de equipo</h3><h3>{data.championships}</h3></div>
                     <div><h3>Campeonatos de pilotos</h3><h3>{data.driverChampionships}</h3></div>
-                    <div><h3>Director principal</h3><h3>{data.teamPrincipal}</h3></div>
+                    <div><h3>Jefe de equipo</h3><h3>{data.teamPrincipal}</h3></div>
                 </div>
             )
         }
